@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-shuttle-50: #f5f5f6;
+  --color-shuttle-100: #e5e6e8;
+  --color-shuttle-200: #ced0d3;
+  --color-shuttle-300: #abaeb5;
+  --color-shuttle-400: #82868e;
+  --color-shuttle-700: #4b4c53;
+  --color-shuttle-900: #3a3b3f;
+  --color-shuttle-950: #242528;
+  --color-lime: #d4fb20;
+  --color-lime-glow: #cbfc01;
+  --color-blue: #003be2;
+  --color-violet: #7f30f7;
+  --color-vulcan: #040819;
+  --color-ink: #4f4f4f;
+
+  --font-display: "Clash Display", "Poppins", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Satoshi", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--color-shuttle-950); background: #fff; }
+:focus-visible { outline: 2px solid var(--color-lime); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Figma grid: 120px cells with faint lines */
+.grid-lines {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,.14) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(255,255,255,.14) 2px, transparent 2px);
+  background-size: 120px 120px;
+}
